@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { modifyPopulation } from "./store";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <button onClick={() => dispatch(modifyPopulation(1, "221"))}>
         click
       </button>
+      <Link to="/independance">independace</Link>
     </div>
   );
 }
